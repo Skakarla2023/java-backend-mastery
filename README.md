@@ -1,14 +1,15 @@
-  
-# Java Fundamentals – Learning & Practice Repository
+# Java Backend Mastery – Learning & Practice Repository
 
-## Overview  
- 
-This repository is a **structured, in-progress learning journal** for mastering **Java fundamentals to intermediate concepts**. It is being built **incrementally**, topic by topic, while learning and practicing.
+## Overview
+
+This repository is a **structured, in-progress learning journal** for mastering **Java from core fundamentals to AI-powered backend engineering**.
+It is being built **incrementally**, topic by topic, while learning and practicing.
 
 The goal of this repository is to:
 
-* Build **strong Java foundations**
+* Build **strong Java and Spring Boot foundations**
 * Practice concepts with **clear, minimal examples**
+* Cover the full backend engineering stack — from OOP to RAG pipelines
 * Serve as a **revision and interview-prep reference**
 
 This is **not a finished project**. Files are added gradually as concepts are learned and understood.
@@ -36,14 +37,16 @@ This is **not a finished project**. Files are added gradually as concepts are le
 09_Design_Patterns
 10_Spring_Basics
 11_Databases_And_JPA
-12_Web_Development
+12_Spring_REST_And_Security
 13_Testing
 14_Tools_And_Build
 15_Interview_Questions
 16_Java_Patterns
+17_Spring_AI
+18_LangChain4j_And_RAG
 ```
 
-Each folder focuses on **one major Java concept**, with:
+Each folder focuses on **one major concept**, with:
 
 * Small, focused examples
 * Clear class and method names
@@ -54,99 +57,105 @@ Each folder focuses on **one major Java concept**, with:
 ## What Each Section Covers
 
 ### 01. Java Basics
-
-* Data types
-* Operators
+* Data types and operators
 * Control flow (if, switch, loops)
 * Methods and basic programs
 
 ### 02. Object-Oriented Programming (OOP)
-
 * Classes and objects
-* Encapsulation
-* Inheritance
-* Polymorphism
-* Abstraction
+* Encapsulation, Inheritance, Polymorphism
+* Abstraction and Interfaces
 
 ### 03. Core APIs
-
-* `String`, `Math`, `Objects`
-* Wrapper classes
+* Generics — type-safe templates, bounded types, wildcards
+* Lambdas — functional interfaces, method references
+* Stream API — filter, map, reduce, collectors
+* `String`, `Math`, `Objects`, Wrapper classes
 * Utility classes
 
 ### 04. Collections and Algorithms
-
-* List, Set, Map implementations
+* List, Set, Map, Queue and Deque implementations
 * Iteration techniques
-* Searching and sorting basics
+* Searching and sorting
 
 ### 05. Exceptions and Logging
-
 * Checked vs unchecked exceptions
 * Custom exceptions
+* Try-catch-finally
 * Basic logging concepts
 
 ### 06. File and IO
-
 * File handling
-* Streams
-* Readers and writers
+* Byte and character streams
+* Buffered IO
 
 ### 07. Concurrency and Threads
-
-* Thread creation
-* Synchronization
-* Deadlocks
-* `wait()`, `notify()`, `notifyAll()`
+* Thread creation and lifecycle
+* Synchronization and deadlocks
+* `ExecutorService` and thread pools
+* `CompletableFuture` and async tasks
+* Producer-consumer pattern
 
 ### 08. Java Memory and JVM
-
 * Heap vs Stack
 * Garbage Collection
 * JVM architecture
 
 ### 09. Design Patterns
-
-* Singleton
-* Factory
-* Observer (as learning progresses)
+* Singleton, Factory, Builder
+* Observer, Strategy
 
 ### 10. Spring Basics
-
-* Core Spring concepts
 * Dependency Injection
-* Basic annotations
+* Spring annotations and bean lifecycle
+* Application context
 
 ### 11. Databases and JPA
-
 * JDBC basics
-* ORM concepts
-* JPA annotations
+* JPA annotations and ORM concepts
+* Entity relationships (`@OneToMany`, `@ManyToOne`)
+* `JpaRepository` and custom queries
 
-### 12. Web Development
-
-* Java web fundamentals
-* Backend concepts
+### 12. Spring REST and Security
+* `@RestController` and REST API design
+* Full CRUD API implementation
+* Global exception handling with `@ControllerAdvice`
+* Spring Security basics and filter chain
+* JWT authentication — register, login, token validation
 
 ### 13. Testing
-
-* Unit testing basics
-* Test structure
+* JUnit basics
+* Mockito
+* Integration tests
 
 ### 14. Tools and Build
-
-* Maven / Gradle
-* Project structure
+* Maven and Gradle
+* Git workflow and project structure
 
 ### 15. Interview Questions
-
-* Common Java interview problems
-* Concept-based questions
+* Java Core Q&A
+* OOP Q&A
+* Collections Q&A
+* Spring Q&A
+* Concurrency Q&A
 
 ### 16. Java Patterns
+* Star and number patterns
+* Logic and output-based problems
 
-* Pattern-based problem solving
-* Logic and output-based patterns
+### 17. Spring AI
+* Setup and configuration (`spring-ai-openai`)
+* `/chat` endpoint with LLM integration
+* Prompt templates with dynamic variables
+* Embedding client
+* `@AiService` interface
+
+### 18. LangChain4j and RAG
+* LangChain4j basics and `@AiService`
+* Conversation memory (`ChatMemory`)
+* Embeddings and `pgvector` setup
+* Document loading and chunking
+* Full RAG pipeline — `/ask` endpoint with vector retrieval
 
 ---
 
@@ -164,7 +173,6 @@ Each folder focuses on **one major Java concept**, with:
 * Browse folders topic-wise
 * Run individual classes directly
 * Use it for:
-
   * Revision
   * Interview preparation
   * Concept clarification
@@ -176,7 +184,6 @@ Each folder focuses on **one major Java concept**, with:
 This repository is primarily for **personal learning**.
 
 However:
-
 * Suggestions
 * Documentation improvements
 * Code readability improvements
@@ -196,8 +203,8 @@ are welcome via Pull Requests.
 ## Author
 
 Maintained by **Skakarla2023**
-Java learner focusing on strong fundamentals, clean code, and practical understanding.
+B.Tech CSE student building toward an **AI Backend Engineer** role — Java, Spring Boot, Spring AI, LangChain4j.
 
 ---
 
-If you are learning Java, feel free to explore, fork, or adapt the structure for your own practice.
+If you are learning Java backend engineering, feel free to explore, fork, or adapt the structure for your own practice.
