@@ -3,7 +3,7 @@
 ### What is a Wildcard?
       
 You know `<T>` means "any type, but once you pick one, stick with it."
-
+ 
 A wildcard `<?>` means **"I don't care what the type is."**
 
 It's used when you want to write code that works with a generic type **without needing to know or fix what that type is.**
