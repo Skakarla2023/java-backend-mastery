@@ -1,7 +1,7 @@
 ## Wildcards in Java Generics
 
 ### What is a Wildcard?
-
+      
 You know `<T>` means "any type, but once you pick one, stick with it."
 
 A wildcard `<?>` means **"I don't care what the type is."**
